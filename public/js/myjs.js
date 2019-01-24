@@ -1,3 +1,4 @@
+
 function deleteProduct(id){
     $.ajax({
         url: 'https://appcuatuine.herokuapp.com/products/' + id,
@@ -14,3 +15,11 @@ function deleteProduct(id){
         }
     });
 }
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 160) {
+        $('#navbar-toggle').css({'transform': 'translateY(0px)',  'transition': ' 1s'});
+    }else{
+        $('#navbar-toggle').css({'transform': 'translateY(-100px)',  'transition': '.2s'});
+    }
+});

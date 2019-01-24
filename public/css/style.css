@@ -1,78 +1,121 @@
-
-
-.form-inline .md-form .form-control.mdb-autocomplete, .side-nav{
-    color: #000 !important;
-}
-.img-user{
-    width: 128px;
-    height: 128px;
-}
-p{
-    margin: 0;
-}
-.carousel-caption {
-    bottom: 40%;
-
-}
-.header1{
+/*///////////Baner/////////////*/
+.baner{
     height: 100px;
+    width: 100%;
+    background-color: #3a9943;
+
 }
-.sreach{
-    width: 500px;
-    background: rgba(15,36,10,0.07);
+.header-phone {
 }
-button{
+
+.header-phone .text {
+    text-align: left;
+    padding-left: 52px;
+    background: url(../images/icon-header-phone.png) left center no-repeat;
+}
+
+.header-phone .text label {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.header-phone .text p {
+    margin: 0;
+    color: #ffdd20;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.search-box{
+    height: 40px;
+    background-color: #62ae6c;
+    border-radius: 5px;
+}
+
+.search-box input{
+    height: 40px;
+    background-color: transparent;
     border: none;
-    cursor: pointer;
-    background: transparent;
-    border-radius: 5%;
-}
-button:hover{
-    background-color: rgba(35,35,35,0.36);
-}
-.spin {
-    border: 3px solid black;
-    animation-name: spin;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    outline: none;
+    color: white;
+    margin-left: 10px;
+    line-height: 40px;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(-45deg)
-    }
-    to {
-        transform: rotate(-405deg)
-    }
-}
-.audio-bar{
-    border-radius: 35.5px;
-}
-progress {
-//float: left;
-    overflow: hidden;
-    color: #75ff36;
-    font-size: 12px;
-    width: 220px;
-    height: 12px;
-    border: none;
-    margin-right: 10px;
-    background: #434343;
-    border-radius: 9px;
-//vertical-align: middle;
-}
-progress::-moz-progress-bar {
-    color:rgba(84,255,66,0.95);
-    background:#434343;
+.search-box i{
+    font-size: 26px;
+    margin: 7px;
+    color: white;
 }
 
-progress[value]::-webkit-progress-bar {
-    background-color: #c2c0c2;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+.shopping-cart-box{
+    border: 1px solid rgba(217,194,219,0.29);
+    border-radius: 5px;
+    padding: 7px;
+
 }
 
-progress[value]::-webkit-progress-value {
-    background-color: #1ab5ff;
+.shopping-cart-box i{
+    color: white;
+    font-size: 28px;
+}
+
+.shopping-cart-box span{
+    background-color: white;
+
+}
+/*///////////Baner/////////////*/
+
+
+.navbar{
+    height: 60px;
+    background-color: white;
+    opacity: .7;
+}
+
+#navbar-toggle{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100px);
+    height: 60px;
+    z-index: 100;
+}
+
+.view{
+    background-color: rgba(0,0,0,0.22);
+    height: 600px;
+}
+
+.view img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.title-slide-show{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+.title-slide-show h3{
+    font-size: 64px;
+}
+
+.carousel-indicators .active {
+    background-color: #2e297a;
+}
+
+.carousel-indicators li {
+    background-color: #f6edff;
+}
+
+footer{
+    height: 500px;
 }
