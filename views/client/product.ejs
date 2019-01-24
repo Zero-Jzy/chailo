@@ -5,31 +5,368 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
+
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<main>-->
+<div class="container">
+    <div class="row">
+        <!--Đây là nội dung bên trái trang.-->
+        <div class="col-12 col-sm-6 left-content">
+            <!--Day la cho code Carousel-->
+            <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="http://lh4.googleusercontent.com/-hKVTERyw3wY/VNt8Rpw3h1I/AAAAAAAAsII/Zbyr0UhawFQ/s1600/iZdesigner-thiet-ke-tao-dang-chai-lo-1.jpg"
+                             alt="anh1" class="d-block img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p> Anh 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://2.bp.blogspot.com/-fxwmK3bDW4M/VNt8SHyOFvI/AAAAAAAAsIQ/orZFq5k36SU/s1600/iZdesigner-thiet-ke-tao-dang-chai-lo-10.jpg"
+                             alt="anh2" class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p> Anh 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://thuytinhdangle.com/wp-content/uploads/2017/04/chai-th%E1%BB%A7y-tinh-300ml-n%E1%BA%AFp-d%C3%A2y-x%C3%A1ch-590x352.jpg"
+                             alt="anh3" class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p> Anh 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn02.static-adayroi.com/0/2016/12/09/1481265891553_9368558.jpg"
+                             alt="anh4" class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p> Anh 4</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel Indicator here (menu ben duoi de chon anh)-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">
+                        <img class="img-fluid"
+                             src="http://lh4.googleusercontent.com/-hKVTERyw3wY/VNt8Rpw3h1I/AAAAAAAAsII/Zbyr0UhawFQ/s1600/iZdesigner-thiet-ke-tao-dang-chai-lo-1.jpg"
+                             alt="">
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="1">
+                        <img class="img-fluid"
+                             src="http://2.bp.blogspot.com/-fxwmK3bDW4M/VNt8SHyOFvI/AAAAAAAAsIQ/orZFq5k36SU/s1600/iZdesigner-thiet-ke-tao-dang-chai-lo-10.jpg"
+                             alt="">
 
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="2">
+                        <img class="img-fluid"
+                             src="https://thuytinhdangle.com/wp-content/uploads/2017/04/chai-th%E1%BB%A7y-tinh-300ml-n%E1%BA%AFp-d%C3%A2y-x%C3%A1ch-590x352.jpg"
+                             alt="">
 
-// Code vào đây
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="3">
+                        <img class="img-fluid"
+                             src="https://cdn02.static-adayroi.com/0/2016/12/09/1481265891553_9368558.jpg" alt="">
 
+                    </li>
+                </ol>
+                <!--Carousel manual Button.-->
+                <a href="#myCarousel" role="button" data-slide="prev" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#myCarousel" role="button" data-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
 
+        </div>
+        <!--Day la noi dung bên phải trang.-->
+        <div class="col-12 col-sm-6">
+            <div class="inner">
+                <h1 class="product-name">Amazon Cloud Cam Security Camera</h1>
+                <div class="price-box box-regular">
+							<span class="regular-price">
+								<span class="price">$80.00</span>
+							</span>
+                </div>
+                <ul class="list-unstyled">
+                    <li>Brands <a
+                                href="http://alula3.demo.towerthemes.com/index.php?route=product/manufacturer/info&amp;manufacturer_id=8">Apple</a>
+                    </li>
+                    <li>Product Code: <span>model3</span></li>
+                    <li>Availability: <span>In Stock</span></li>
 
+                </ul>
+                <p class="short-des">More room to move.
 
+                    With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you
+                    enjoy up to 40,000 songs or..</p>
+                <form>
+                    <div class="form-group row">
+                        <label for="quantity" class="col-2 col-sm-1 col-form-label">Qty</label>
+                        <div class="col-7 col-sm-2">
+                            <input type="text" class="form-control" id="quantity" value="1">
+                        </div>
+                        <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+                            <button type="button" class="btn btn-danger btn-block">+ Add To Card</button>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="detail-btn"><i class="far fa-heart"></i> Add to Wish Lish</a>
 
+                </form>
+                <a href="https://www.facebook.com/profile.php?id=100006443442374&fref=pb&eid=ARCZWfSDD-h8PSeWKa9Wwr-xu70sFc_v95p74h_b-IiBCCecAM0TmTLYlscGy1wr91HaVUzT0jtB_U_0&hc_location=profile_browser"
+                   class="btn btn-primary btn-sm " tabindex="-1" role="button" aria-disabled="true">facebook </a>
+                <a href="https://www.facebook.com/daylaxao/photos/a.1488016881292593/2135679953192946/?type=3&theater"
+                   class="btn btn-secondary btn-sm" tabindex="-1" role="button" aria-disabled="true">share</a>
+            </div>
+            <!--<h1></h1>-->
+            <!--<ul>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+            <!--</ul>-->
+            <!--<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or..</p>-->
 
+        </div>
+        <!--Kêt thúc nội dung bên phải trang.-->
+    </div>
 
+    <!--Tab bat dau tu day-->
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item active">
+                    <a href="#description" class="nav-link active" data-toggle="tab" role="tab">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#review" class="nav-link" data-toggle="tab" role="tab">Review</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="description">
+                <p>
+                    <b>More room to move</b>
+                </p>
+                <p>With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy
+                    up to 40,000
+                    songs or up to 200 hours of video or any combination wherever you go.</p>
 
+                <p>
+                    <b>Cover Flow.</b>
+                </p>
+                <p>WBrowse through your music collection by flipping through album art. Select an album to turn it over
+                    and see the track list.</p>
 
+                <p>
+                    <b>Enhanced interface.</b>
+                </p>
+                <p>Experience a whole new way to browse and view your music and video.</p>
 
+                <p>
+                    <b>Sleeker design.</b>
+                </p>
+                <p>Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and
+                    polished stainless steel enclosure with rounded edges.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="review">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-striped table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td style="width: 50%;"><strong>Plazathemes</strong></td>
+                                    <td class="text-right">11/11/2018</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><p>It’s both good and bad. If Nikon had achieved a high-quality wide
+                                            lens camera
+                                            with a 1 inch sensor, that would have been a very competitive product. So in
+                                            that sense,
+                                            it’s good for us. But actually, from the perspective of driving the 1 inch
+                                            sensor
+                                            market, we want to stimulate this market and that means multiple
+                                            manufacturers.</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-12 myform-label">Your Name</label>
+                        <div class="col-12">
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                        <label for="review" class="col-12 myform-label">Your Review</label>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="4" name="review"
+                                      id="review">Enter review here...</textarea>
+                            <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-12 col-sm-1 myform-label">Rating</label>
+                        <div class="col-12 col-sm">
+                            <div class="form-check form-check-inline">
+                                <label for="guest1" class="form-check-label mr-1">Bad </label>
+                                <input type="radio" name="rating" value="1" id="rate1" autocomplete="off"
+                                       class="form-check-input">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="rating" value="2" id="rate2" autocomplete="off"
+                                       class="form-check-input">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="rating" id="rate3" autocomplete="off"
+                                       class="form-check-input">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="rating" id="rate4" class="form-check-input"
+                                       autocomplete="off">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="rating" id="rate5" class="form-check-input"
+                                       autocomplete="off">
+                                <label for="guest5" class="form-check-label"> Good</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="ml-auto">
+                            <a role="button" type="submit" class="btn btn-outline-danger">Continue</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Ket thuc tab-->
+    <div class="module-title">
+        <h2>Related Products</h2>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top"
+                     src="http://tamnguyenshop.com/Upload/images/Home-decor-2/chai-thuy-tinh-handmade/chai-thuy-tinh-tam-giac23.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bottle For Recycled Water D00433</h5>
+                    <div class="card-text">
+                        <div class="price-box">
+                            <p class="regular-price"><span class="price">$199.99</span></p>
+                        </div>
+                    </div>
+                    <p class="card-text">This bottle has supporting water for natural recyling lead-in to future
+                        content.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="http://tamnguyenshop.com/Upload/images/Home-decor-2/chai-thuy-tinh-handmade/chai-thuy-tinh-tam-giac23.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bottle For Recycled Water D421512</h5>
+                    <div class="card-text">
+                        <div class="price-box">
+                            <p class="regular-price"><span class="price">$199.99</span></p>
+                        </div>
+                    </div>
+                    <p class="card-text">This bottle has supporting water for natural recyling lead-in to future
+                        content.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="http://tamnguyenshop.com/Upload/images/Home-decor-2/chai-thuy-tinh-handmade/chai-thuy-tinh-tam-giac23.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bottle For Recycled Water D312412</h5>
+                    <div class="card-text">
+                        <div class="price-box">
+                            <p class="regular-price"><span class="price">$199.99</span></p>
+                        </div>
+                    </div>
+                    <p class="card-text">This bottle has supporting water for natural recyling lead-in to future
+                        content.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <!--<div class="row">-->
+    <!--<div class="product-info-detailed">-->
+    <!--<ul class="nav nav-tabs">-->
+    <!--<li class="active">-->
+    <!--<a href=""></a>-->
+    <!--</li>-->
+    <!--<li class><a href=""></a></li>-->
+    <!--<li class><a href=""></a></li>-->
+    <!--</ul>-->
+    <!--<div class="tab-content">-->
+    <!--<div class="tab-pane active" id="#">-->
+    <!--<div><p>-->
+    <!--<b></b>-->
+    <!--</p>-->
+    <!--<p></p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<script src="/js/lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/lib/bootstrap.js"></script>
+<script type="text/javascript" src="/js/lib/popper.min.js"></script>
+<script type="text/javascript" src="/js/lib/mdb.min.js"></script>
 
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.img-child').on('click', '.img', function () {
+            var url = $(this).attr('data-url');
+            $('.image-root img').attr('src', url);
+        });
+
+    });
+</script>
 </body>
 </html>
-
